@@ -8,13 +8,61 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="#403060"
+    android:background="#8f76c1"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.cosorio.luciddreamingapp.MainActivity"
-    tools:showIn="@layout/activity_main">
+    tools:showIn="@layout/activity_main"
+    style="@android:style/Animation"
+    android:clickable="false"
+    android:contextClickable="false">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Lucid Dreaming"
+        android:id="@+id/textView"
+        android:textColor="#17ecd3"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center" />
+
+    <SeekBar
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:layout_marginTop="61dp"
+        android:layout_below="@+id/seekBar2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Small to Large"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/seekBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:textSize="30dp" />
+
+    <SeekBar
+        android:layout_width="500dp"
+        android:max="5
+        "
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar2"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
